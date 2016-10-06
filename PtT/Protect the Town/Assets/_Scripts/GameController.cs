@@ -86,7 +86,7 @@ public class GameController : MonoBehaviour {
     }
     public void RestartButton_Click()
     {
-        
+        //reloads scene
         SceneManager.LoadScene("Game");
     }
    
@@ -123,6 +123,7 @@ public class GameController : MonoBehaviour {
     }
     private void _endGame()
     {
+        // all these need to be set to this state at game end for end instance
         this.GameOver.gameObject.SetActive(true);
         Debug.Log(this.ScoreValue);
         this.FinalScore.text = "Final Score: " + this.ScoreValue;
